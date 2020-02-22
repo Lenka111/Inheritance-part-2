@@ -1,4 +1,5 @@
-//derived class
+//Elena Voinu
+//derived class inherits from base class Rectangle
 class Cuboid extends Rectangle {
     private double height;
 
@@ -8,9 +9,11 @@ class Cuboid extends Rectangle {
         //in case height < 0 we set the height field value to 0
         if(height < 0){ this.height = 0; } else { this.height = height;}
     }
+    //get height and return it
     double getHeight(){
         return this.height;
     }
+    // get the volume of cuboid
     double getVolume(){
         return getArea() * getHeight();
     }
